@@ -57,21 +57,19 @@ Where outputs are saved (paths)
 EDA — what each plot reveals and what to check
 - class_frequency.csv / class_frequency_top.png
   - Shows instance counts per class. Check for severe class imbalance (long tail).
+  -  <img src="class_frequency_top.png" alt="Top classes" width="400" />
 - objects_per_image_hist.png
   - Shows how many objects per image. Look for many zeros or extreme counts.
 - bbox_area_norm_hist.png
   - BBox area normalized by image area. If most boxes are extremely small, training may struggle.
 - bbox_aspect_ratio_hist.png
   - Width/height distribution. Long tails or values near zero indicate mislabeled boxes or incorrect coordinates.
+  - <img src="bbox_aspect_ratio_hist.png" alt="Aspect ratios" width="400" />
 - image_size_scatter.png
   - Shows diversity of image dimensions; many tiny or identical sizes may require resizing strategy.
 - sample_<breed>.jpg
   - Inspect sample annotated images to confirm box alignment and labels.
-
-Example inline references (view after running EDA)
-- ![Top classes](dogs_yolo_dataset/eda/class_frequency_top.png)
-- ![Aspect ratios](dogs_yolo_dataset/eda/bbox_aspect_ratio_hist.png)
-- ![Sample annotate](dogs_yolo_dataset/eda/sample_Chihuahua.jpg)
+  - <img src="sample_Leonberg.jpg" alt="sample_Leonberg.jpg" width="400" height ="400"/>
 
 Training & evaluation (YOLOv8)
 - Example training snippet (in Python):
@@ -88,7 +86,7 @@ results = model.val()  # runs evaluation on val set defined in YAML
 
 Tips & common troubleshooting
 - Empty plots: run the diagnostics cell in `yolo.ipynb` to inspect `df` (counts, NaNs). Verify parse_xml_coordiantes returns valid numbers and class mapping covers XML name variants.
-- Missing images or XMLs: verify folder names match expected `wnid-breed` format, and .DS_Store or hidden files are not interfering.
+- Missing images or XMLs: verify folder names match the expected `wnid-breed` format, and .DS_Store or hidden files are not interfering.
 - Use Git LFS for medium-sized dataset files and keep only a small sample in the repo.
 - For reproducible dataset snapshots, use releases + Zenodo (mint DOI) or HF dataset hosting.
 
@@ -98,8 +96,3 @@ Versioning & dataset hosting recommendations
 - Use GitHub Releases or Zenodo to version dataset snapshots and provide a DOI.
 
 License & citation
-- Add LICENSE and CITATION.cff to the repo with dataset license and citation instructions.
-
-Contact
-- Open an issue with notebook outputs or error logs for reproducibility help.
-
