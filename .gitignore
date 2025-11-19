@@ -231,3 +231,6 @@ __marimo__/
 # Additional coverage output
 coverage_html_report/
 .cache/
+data/images/*
+data/annotations/*
+!data/DATA_README.md
