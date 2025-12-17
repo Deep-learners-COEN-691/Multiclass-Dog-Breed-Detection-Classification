@@ -86,8 +86,6 @@ python gradio_app.py
 **Features:**
 - Upload images or videos
 - Real-time inference
-- Adjustable confidence threshold
-- Batch processing support
 
 
 
@@ -128,7 +126,7 @@ python detection_transformer_train.py
 ### Performance Metrics
 
 ![Model Comparison](figures/model_comparison.png)
-*Comprehensive performance comparison across all models*
+*Performance comparison*
 
 ### Training Curves
 
