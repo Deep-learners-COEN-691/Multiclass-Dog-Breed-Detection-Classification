@@ -21,7 +21,7 @@ This comprehensive computer vision project focuses on:
 | **DETR** | Ultralytics | ResNet-50 | 0.79 | ~36.54ms |
 | **FasterRCNN** | PyTorch | ResNet-50 | 0.62 | ~110.73ms |
 | **RetinaNet** | PyTorch | ResNet-50 |  |  |
-| **SSD** | PyTorch | MobileNet | TBD |  |
+| **SSD** | PyTorch | MobileNet |  |  |
 
 
 ## 📊 Dataset
