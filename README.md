@@ -2,9 +2,6 @@
 
 This project implements multiple state-of-the-art object detection models for detecting dogs in images and classifying them into their specific breeds. The project compares the performance of **YOLO**, **RetinaNet**, **SSD**, and **DETR (Detection Transformer)** models on the Stanford Dogs Dataset containing 120 different dog breeds.
 
-![Project Overview](figures/project_overview.png)
-*Comparison of different object detection models for dog breed classification*
-
 ## 🎯 Project Overview
 
 This comprehensive computer vision project focuses on:
